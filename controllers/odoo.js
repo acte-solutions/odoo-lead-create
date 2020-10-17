@@ -38,7 +38,7 @@ router.post('/crm/lead/create', jsonParser, async (req, res) => {
     contact_name: req.body.name,
     email_from: req.body.email,
     description: req.body.description,
-    company_id: 2, //important if you use multicompany
+    company_id: 1, //important if you use multicompany
   }
 
   return odoo.connect(function (err) {
